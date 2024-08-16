@@ -4,8 +4,7 @@
 ::-webkit-scrollbar{
     height: 4px;
     width: 4px;
-    background: gray;
-    display: none;
+    background: #0075ff;
 }
 
 /* Track */
@@ -16,8 +15,8 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
-  display: none;
+  background: #22c55e; 
+  
 }
 
 
@@ -37,7 +36,7 @@ html{
 
 
 body{
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     background-color: #EFF3F5;
     font-family:  "Roboto", sans-serif;
@@ -66,14 +65,20 @@ body .page-body{
     }
 
     .page-body aside ul{
-        width: 70%;
+        width: 80%;
     }
     .page-body aside ul li a{
         display: flex;
-        align-items: center;padding: 15px 0;
+        align-items: center;
+        padding: 15px 20px;
+        border-radius: 20px;
+        margin-top: 10px;
+        transition: 0.3s;
     }
     .page-body aside ul li a:hover ,   .page-body aside ul li a:active{
-        color: #2C5375;
+        color: #FFFFFF;
+        background-color: #0075ff;
+        box-shadow: 0 0 15px 1px #0075ff;
     }
     .page-body aside ul li i{
         margin-right: 10px;
@@ -85,10 +90,13 @@ body .page-body{
         font-size: 1.2vw;
         line-height: 23.44px;
         font-weight: 400;
+        text-align: center;
     }
 
     .page-body aside ul .active a{
-        color: #2C5375;;
+        color: #FFFFFF;
+        background-color: #22c55e;
+
     }
 
     .page-body aside .log-out{
@@ -198,14 +206,26 @@ body .page-body{
         line-height: 37.5px;
         font-weight: 500;
     }
-    
+
     .page-body .main-section .main .description img{
         position: absolute;
         right: 8%;
         top: 50%;
         transform: translateY(-50%);
+        animation: updown 3s normal infinite alternate-reverse forwards;
     }
+    @keyframes updown {
+        0%{
+            transform: translateY(-50%);
+        }
+        50%{
+            transform:  translateY(-55%);
 
+        }
+        100%{
+            transform: translateY(-55%);
+        }
+    }
     /*imgs of desc...*/
         .page-body .main-section .main .description .act{
             width: 287px;
@@ -220,7 +240,10 @@ body .page-body{
             height: 238px;
             right: 0%;
         }
+
+       
     /*imgs of desc...*/
+
     /*first section*/
 
 /*main*/
@@ -258,8 +281,7 @@ body .page-body{
             box-shadow: 0 0 3.9px 1px #00000040;
         }
         .main-section .main .act-cards .card:hover{
-            box-shadow: 0 0 10px 1px #00000040;
-            padding: 15px 22px;
+            box-shadow: 0 0 10px 2px #00000040;
             transition: 0.3s;
         }
         .main-section .main .act-cards .card img{
