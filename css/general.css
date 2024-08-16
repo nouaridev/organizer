@@ -212,7 +212,7 @@ body .page-body{
         right: 8%;
         top: 50%;
         transform: translateY(-50%);
-        animation: updown 3s normal infinite alternate-reverse forwards;
+        animation: updown 2s ease-in-out infinite alternate-reverse forwards;
     }
     @keyframes updown {
         0%{
@@ -223,7 +223,7 @@ body .page-body{
 
         }
         100%{
-            transform: translateY(-55%);
+            transform: translateY(-50%);
         }
     }
     /*imgs of desc...*/
@@ -302,4 +302,131 @@ body .page-body{
             padding-top: 10px;
         }
 
+        /*activities  open catigory*/
+            .main-section .main .propositon-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #FFFFFF;
+                padding: 10px 7%;
+                margin-top: 40px;
+                border-radius: 20px;
+                height: 58px;
+            }
+            .main-section .main .propositon-header h2{
+                font-size: 20px;
+                font-weight: 500;
+                color: #39434D;
+            }
+            .main-section .main .propositon-header h2:nth-child(3){
+                color: #AEAEAE;
+                cursor: pointer;
+            }
+
+            .main-section .main .proposition-cards{
+                min-height: 500px;
+                background: #FFFFFF;
+                border-radius: 20px;
+                padding: 40px;
+                margin-top: 30px;
+            }
+            .main-section .main .proposition-cards .card{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 4%;
+                border-bottom: 1px solid #39434d40;
+                cursor: pointer;  transition: .3s;
+                position: relative;
+            }
+            .main-section .main .proposition-cards .card:hover{
+                border-left: 10px solid #22c55e;
+            }
+            .main-section .main .proposition-cards .card:hover .card-info-section{
+                visibility: visible;
+            }
+            .main-section .main .proposition-cards .card .left{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 51%;
+            }
+            .main-section .main .proposition-cards .card .left .title{
+                font-size: 20px;
+                font-weight: 400;
+                color: #171E25;
+            }
+            .main-section .main .proposition-cards .card .left p{
+                line-height: 18px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #898C90;
+            }
+            .main-section .main .proposition-cards .card .right{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 200px;
+            }
+            .main-section .main .proposition-cards .card .right .acc-btn{
+                color: #22c55e;
+                width: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+            }
+            .main-section .main .proposition-cards .card .right .acc-btn:hover{
+                color: #0075ff;
+            }
+            .main-section .main .proposition-cards .accepted .right .acc-btn{
+                visibility: hidden;
+            }
+            .main-section .main .proposition-cards .card .right .delete-btn{
+                color: #E63946;
+                cursor: pointer;
+            }
+            .main-section .main .proposition-cards .card .right .delete-btn:hover{color: #fc091d;}
+        /*activities  open catigory*/
+
+        /*card information*/
+            .main-section .main .proposition-main .card-info-section{
+                background-color: #FFFFFF;
+                width: 500px;
+                padding: 0px 50px 30px 50px;
+                border-radius: 20px;
+                text-align: center;
+                position: absolute;
+                top: 110%;
+                left: 0;
+                visibility: hidden;
+                z-index: 3;
+                box-shadow: 0 0 3px 3px #a6a2a263;
+            }
+            .main-section .main .proposition-main .card-info-section h2{
+                font-size: 24px;
+                font-weight: 500;
+                color: #6898B2;
+
+                padding-bottom: 30px;
+
+            }
+            .main-section .main .proposition-main .card-info-section p{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23.44px;
+                color: #474D54;
+            }
+            .main-section .main .proposition-main .card-info-section .exit{
+                color: #E63946;
+                font-size: 25px;
+                font-weight: bold;
+                margin-left: 400px;
+                padding-top: 10px;
+            }
+            .main-section .main .proposition-main .card-info-section .exit:hover{
+                color: #fd0015;
+            }
+
+        /*card information*/
 /*end activities page*/
