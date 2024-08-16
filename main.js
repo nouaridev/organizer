@@ -1,12 +1,18 @@
-// script.js
-function toggleInfo() {
-    // Get the info element
-    const infoElement = document.getElementById("info");
+// activities
     
-    // Toggle its visibility
-    if (infoElement.style.display === 'none' || infoElement.style.display === '') {
-        infoElement.style.display = 'block';
-    } else {
-        infoElement.style.display = 'none';
-    }
-}
+    let actCards = document.querySelectorAll(".main-section .main .proposition-cards .card .left")
+    let actCardsExit = document.querySelectorAll(".main-section .main .proposition-main .card-info-section .exit")
+
+    /// make  the  info card visible
+    actCards.forEach((e)=>e.addEventListener("click" , function(e){
+            this.parentNode.children[0].classList.remove("hidden");
+            console.log(this.parentNode)
+    }))
+    // hid  the  info card
+    actCardsExit.forEach((e)=>e.addEventListener("click" , function(e){
+        this.parentNode.classList.add("hidden");
+        console.log(this.parentNode)
+    }))
+// activities
+
+

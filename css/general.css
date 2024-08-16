@@ -342,9 +342,7 @@ body .page-body{
             .main-section .main .proposition-cards .card:hover{
                 border-left: 10px solid #22c55e;
             }
-            .main-section .main .proposition-cards .card:hover .card-info-section{
-                visibility: visible;
-            }
+          
             .main-section .main .proposition-cards .card .left{
                 display: flex;
                 align-items: center;
@@ -399,9 +397,11 @@ body .page-body{
                 position: absolute;
                 top: 110%;
                 left: 0;
-                visibility: hidden;
                 z-index: 3;
                 box-shadow: 0 0 3px 3px #a6a2a263;
+            }
+            .hidden{
+                visibility: hidden;
             }
             .main-section .main .proposition-main .card-info-section h2{
                 font-size: 24px;
