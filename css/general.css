@@ -249,10 +249,35 @@ body .page-body{
             padding: 80px 140px;
         }
         .main-section .main .act-cards .card{
-            border: 1px solid gray;
+            border: none;
             text-align: center;
-            padding: 20px 40px;
-            border-radius: 20px;
-            
+            padding: 13px 20px;
+            border-radius: 10px;
+            width: 190px;
+            height: 180px;
+            box-shadow: 0 0 3.9px 1px #00000040;
         }
+        .main-section .main .act-cards .card:hover{
+            box-shadow: 0 0 10px 1px #00000040;
+            padding: 15px 22px;
+            transition: 0.3s;
+        }
+        .main-section .main .act-cards .card img{
+            width: 64px;
+            height: 64px;
+        }
+        .main-section .main .act-cards .card  h3{
+            font-size: 20px;
+            line-height: 23.44px;
+            color: #171C22;
+            font-weight: 500;
+            padding-top: 10px;
+        }
+        .main-section .main .act-cards .card p{
+            color: #A6A2A2;
+            font-weight: 500;
+            font-size: 15px;
+            padding-top: 10px;
+        }
+
 /*end activities page*/
