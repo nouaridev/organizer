@@ -28,6 +28,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    line-height: 23.44px;
 }
 html{
     padding: 0;
@@ -70,23 +71,21 @@ body .page-body{
     .page-body aside ul li a{
         display: flex;
         align-items: center;
-        padding: 15px 20px;
+        padding: 15px 7%;
         border-radius: 20px;
         margin-top: 10px;
         transition: 0.3s;
     }
     .page-body aside ul li a:hover ,   .page-body aside ul li a:active{
-        color: #FFFFFF;
-        background-color: #0075ff;
-        box-shadow: 0 0 15px 1px #0075ff;
+        color: #2C5375;
     }
     .page-body aside ul li i{
         margin-right: 10px;
-        
+    
     }
 
     .page-body aside ul li a{
-        color:  #A6A2A2;
+        color:  #A6A2A2;;
         font-size: 1.2vw;
         line-height: 23.44px;
         font-weight: 400;
@@ -94,9 +93,7 @@ body .page-body{
     }
 
     .page-body aside ul .active a{
-        color: #FFFFFF;
-        background-color: #22c55e;
-
+        color: #2C5375;
     }
 
     .page-body aside .log-out{
@@ -121,6 +118,7 @@ body .page-body{
         align-items: center;
         padding: 20px;
     }
+
     .page-body .main-section .nav-bar .title{
         font-size: 2vw;
         font-weight: 600;
@@ -139,6 +137,7 @@ body .page-body{
         align-items: center;
         margin-left: 30px;
     }
+
     .page-body .main-section .nav-bar .right .widget i{
         margin-right: 15px;
         font-size: 20px;
@@ -167,7 +166,7 @@ body .page-body{
         padding-left: 5px;
         font-weight: 400;
     }
-    
+
 
 /*end nav-bar*/
 /*end of main  section*/
@@ -190,15 +189,18 @@ body .page-body{
         justify-content: space-between;
         position: relative;
     }
+
     .page-body .main-section .main .description .left {
         width: 40%;
     }
+
     .page-body .main-section .main  .description .left h2{
         font-size: 25px;
         color: #6898B2;
         font-weight: 500;
         padding-bottom: 10px;
     }
+
     .page-body .main-section .main .description .left p{
         font-size: 25px;
         color: #39434D;
@@ -214,6 +216,7 @@ body .page-body{
         transform: translateY(-50%);
         animation: updown 2s ease-in-out infinite alternate-reverse forwards;
     }
+
     @keyframes updown {
         0%{
             transform: translateY(-50%);
@@ -240,7 +243,11 @@ body .page-body{
             height: 238px;
             right: 0%;
         }
-
+        .page-body .main-section .main .description .evact{
+            width: 288px;
+            height: 250px;
+            top: 60%;
+        }
        
     /*imgs of desc...*/
 
@@ -430,3 +437,142 @@ body .page-body{
 
         /*card information*/
 /*end activities page*/
+
+
+
+
+/*start qst&quiz*/
+   /*global page  (catigories)*/
+        .page-body .main-section .main .quiz-catigories-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            padding: 10px 3%;
+            margin-top: 40px;
+            border-radius: 20px;
+            height: 58px;
+        }
+
+        .main-section .main .quiz-catigories-header h2{
+            font-size: 20px;
+            font-weight: 500;
+            color: #39434D;
+        }
+        .main-section .main .quiz-catigories-header .left , .main-section .main .quiz-catigories-header .right , .main-section .main .quiz-catigories-header .center{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-section .main .quiz-catigories-header .right{
+            width: 300px;
+        }
+        .main-section .main .quiz-catigories-header .center{
+            width: 30%;
+        }
+        .main-section .main .quiz-catigories-header .center h2{
+            width: 33.3%;
+        }
+        .main-section .main .quiz-catigories-header  .center h2:last-child{text-align: end;}
+        .main-section .main .quiz-catigories-header .center h2:first-child{text-align: start;}
+        .main-section .main .quiz-catigories-header   .center h2:nth-child(2){text-align: center}
+        .main-section .main .quiz-catigories-header .left{
+            width : 250px;
+        }
+
+        .main-section .main  .quiz-catigories-header .right .new-catigorie-btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:   #2C5375 ;
+            color: #FFFFFF;
+            border-radius: 20px;
+            
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .main-section .main  .quiz-catigories-header .right .new-catigorie-btn i{margin-right: 10px;}
+        
+        .main-section .main .quiz-catigories-header .right h2{
+            color: #AEAEAE;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+        .main-section .main .quiz-catigories-header .right h2 i{
+            margin-right: 5px;
+        }
+
+                /* cards */
+        .main-section .main .quiz-catigories-cards {
+            background-color: #FFFFFF;
+            padding: 10px 0;
+            margin-top: 40px;
+            border-radius: 20px;
+        }
+        .main-section .main .quiz-catigories-cards .card{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 3%;
+            height: 58px;
+            border-bottom: 1px solid #39434d28;
+        }
+        .main-section .main .quiz-catigories-cards .card .left , .main-section .main .quiz-catigories-cards   .card .right , .main-section .main .quiz-catigories-cards .card .center{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-section .main .quiz-catigories-cards   .card  .right{
+            width: 300px;
+            justify-content: flex-end;
+        }
+        .main-section .main .quiz-catigories-cards   .card  .center{
+            width: 30%;
+        }
+        .main-section .main .quiz-catigories-cards   .card  .center h2{
+            width: 33.3%;
+            color: #898C90;
+            font-size: 16px ;
+            line-height: 18.75px; 
+        }
+        .main-section .main .quiz-catigories-cards   .card  .center h2:last-child{text-align: end;}
+        .main-section .main .quiz-catigories-cards   .card  .center h2:first-child{text-align: start;}
+        .main-section .main .quiz-catigories-cards   .card  .center h2:nth-child(2){text-align: center}
+        .main-section .main .quiz-catigories-cards   .card  .left{
+            width : 250px;
+          
+            color: #39434D;
+        }
+        .main-section .main .quiz-catigories-cards   .card  .left h2{
+            font-size: 20px;
+            line-height: 23px;
+            font-weight: 500;
+        }
+
+        .main-section .main .quiz-catigories-cards  .delete-btn{
+            color: #E63946;
+            cursor: pointer;
+        }
+        .main-section .main .quiz-catigories-cards .delete-btn:hover{color: #fc091d;}
+
+        .main-section .main .quiz-catigories-cards .card:hover{
+            border-bottom: 3px solid #22c55e;
+        }
+
+
+
+        .main-section .main .quiz-catigories-cards  .card .right .edit-btn{
+            color: #1195BE;
+            font-size: 16px;
+            font-weight: 500;
+            margin-right: 50px;
+            line-height: 28.5px;
+            cursor: pointer;
+        }
+    .main-section .main .quiz-catigories-cards  .card .right .edit-btn:hover{
+        color: #0075ff;
+    }
+      
+   /*end global page  (catigories)*/
+/*end start qst&quiz*/
