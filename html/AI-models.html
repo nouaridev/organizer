@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>AI Models</title>
 </head>
 <body>
@@ -94,10 +96,140 @@
                         <h2>AI Space</h2>
                         <p>Upload, manage, and test AI models efficiently.</p>
                     </div>
-                    <img class="qz" src="../3dcasual-li" alt="">
+                    <img class="qz" src="../3d-casual-life-office-supplies.png" alt="">
                 </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Creator</th>
+                            <th>Date</th>
+                            <th><button class="Add" onclick="openModalAI()"> <span class="material-symbols-outlined">add</span>New AI Model</button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="space">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Fire detector</td>
+                            <td class="td-change">Yasser Aliche</td>
+                            <td class="td-change">15/08/2024</td>
+                            <td class="actions">
+                                <button class="edit" onclick="EditAIModal()"><span class="material-symbols-outlined">edit_square</span>Edit</button>
+                                <button class="delete" onclick="deleteModal()"><span class="material-symbols-outlined">delete</span>Delete</button>
+                                <button class="Preview" ><span class="material-symbols-outlined">open_in_new</span>Preview</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fire detector</td>
+                            <td class="td-change">Yasser Aliche</td>
+                            <td class="td-change">15/08/2024</td>
+                            <td class="actions">
+                                <button class="edit" onclick="EditAIModal()"><span class="material-symbols-outlined">edit_square</span>Edit</button>
+                                <button class="delete" onclick="deleteModal()"><span class="material-symbols-outlined">delete</span>Delete</button>
+                                <button class="Preview"><span class="material-symbols-outlined">open_in_new</span>Preview</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lung Cancer Prediction</td>
+                            <td class="td-change">Yasser Aliche</td>
+                            <td class="td-change">15/08/2024</td>
+                            <td class="actions">
+                                <button class="edit" onclick="EditAIModal()"><span class="material-symbols-outlined">edit_square</span>Edit</button>
+                                <button class="delete" onclick="deleteModal()"><span class="material-symbols-outlined">delete</span>Delete</button>
+                                <button class="Preview"><span class="material-symbols-outlined">open_in_new</span>Preview</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lung Cancer Prediction</td>
+                            <td class="td-change">Yasser Aliche</td>
+                            <td class="td-change">15/08/2024</td>
+                            <td class="actions">
+                                <button class="edit" onclick="EditAIModal()"><span class="material-symbols-outlined">edit_square</span>Edit</button>
+                                <button class="delete" onclick="deleteModal()"><span class="material-symbols-outlined">delete</span>Delete</button>
+                                <button class="Preview"><span class="material-symbols-outlined">open_in_new</span>Preview</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+
+
+    <!-- Code add modal -->
+    <div class="modal" id="AddeAIModal" >
+        <div class="form-container AI">
+            <form>
+                <H1>Add Ai Model</H1>
+                <div class="form-group">
+                    <label for="fullName">Title</label>
+                    <input type="text"  placeholder="Enter the AI Model title">
+                </div>
+
+                <div class="form-group">
+                    <label for="position">External Link</label>
+                    <input type="text"  placeholder="Enter external link (hugging face/github...)">
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="cancel-btn" onclick=" closeModalAI() ">Cancel</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+     <!-- Code delete -->
+    <div class="modal" id="deleteModal">
+        <div class="form-delete">
+                <div class="form-message">
+                    <h3>Delete Admin</h3>
+                    <p>Are you sur you want to delete?</p>
+                </div>
+                <div class="form-buttons-delete">
+                    <button type="button" class="cancel-btn-delete" onclick="closeModaldelete()">Cancel</button>
+                    <button type="submit" class="btn-delete">Delete</button>
+                </div>
+        </div>
+    </div>
+
+    <!-- code edit  -->
+    <div class="modal" id="EditAIModal" >
+        <div class="form-container AI AI-edit">
+            <form>
+                <H1>Edit Ai Model</H1>
+                <div class="form-group">
+                    <label for="fullName">Title</label>
+                    <input type="text" placeholder="Fire detector">
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Creator</label>
+                    <input type="text" placeholder="Yasser Aliche">
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Date</label>
+                    <input type="text" placeholder="15/08/2024">
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="cancel-btn" onclick=" CloseEditAIModal() ">Cancel</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   <script src="/main.js"></script>
 </body>
 </html>
