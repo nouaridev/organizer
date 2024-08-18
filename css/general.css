@@ -1421,3 +1421,107 @@ body .page-body{
         }
 
 /* end AI models  */
+
+
+
+/* Login page  */
+
+.body-login {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #62839f;
+    height: 100vh;
+    width: 100vw;
+}
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.illustration {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px 60px;
+    border-radius: 68px;
+    width: 490px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    height: 520PX;
+    backdrop-filter: blur(10px);
+    border: 1px solid #dddddd42;
+}
+
+.container-login .logo {
+    margin-bottom: 30px;
+    display: flex;
+
+}
+
+.container-login .logo img {
+    width: 60px;
+    height: 50px;
+    padding-right: 10PX;
+}
+
+.container-login  .logo p {
+    color: #CBCBCE;
+    font-size: 1rem;
+    font-family: Geneva;
+    margin-top: 35PX;
+}
+
+.container-login .input-group {
+    margin-bottom: 30px;
+}
+
+.container-login .input-group label {
+    color: #fff;
+    margin-bottom: 0PX;
+}
+
+.container-login .input-group input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    color: #fff;
+    padding-top: 20PX;
+    outline: none;
+    font-size: 14PX;
+    padding-left: 0PX;
+}
+
+
+.container-login .input-group input::placeholder {
+    color: #CBCBCE;
+    font-size: 14PX;
+}
+
+.container-login .login-btn {
+    margin-top: 27PX;
+    width: 100%;
+    padding: 13px;
+    background-color: #cf1b22;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container-login  .login-btn:hover {
+    background-color: #a5141b;
+}
+
+/* end  */
