@@ -1259,9 +1259,6 @@ body .page-body{
                 color: #999;
             }
 
-            .line-input:focus {
-                border-bottom-color: #000;
-            }
 
                 /*  end code feedback */
 
@@ -1360,9 +1357,6 @@ body .page-body{
                 color: #999;
             }
 
-            .profile-card .feedback-notes .line-input:focus {
-                border-bottom-color: #000;
-            }
             .profile-card .title-feedback {
                 display: flex;
                 justify-content: space-between;
