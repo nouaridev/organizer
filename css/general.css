@@ -751,6 +751,14 @@ body .page-body{
             font-size: 18px;
             padding: 10px 0 ;
         }
+/* 
+        .main-section .main .add-quiz input[type ="file"]{
+            color: transparent;
+        } */
+        .main-section .main .add-quiz input::file-selector-button{
+            visibility: hidden;
+            
+        }
         /* satart add forms */
    /* end  secondary pages  (inside catigories) */
    /* add-cat from */

@@ -154,12 +154,46 @@
                   <i class="fa-regular fa-pen-to-square"></i>
                   Edit
                 </div>
-                <div class="delete-btn">
+                <div class="delete-btn" onclick="deleteModal()">
                   <i class="fa-solid fa-trash-can"></i>
                   Delete
                 </div>
               </div>
             </div>
+            <div class="card">
+                <div class="left"><h2>Mastering CSS&Html Basics</h2></div>
+                <div class="center">
+                  <h2>134</h2>
+                  <h2>42</h2>
+                </div>
+                <div class="right">
+                  <div class="edit-btn">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    Edit
+                  </div>
+                  <div class="delete-btn" onclick="deleteModal()">
+                    <i class="fa-solid fa-trash-can"></i>
+                    Delete
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="left"><h2>Mastering CSS&Html Basics</h2></div>
+                <div class="center">
+                  <h2>134</h2>
+                  <h2>42</h2>
+                </div>
+                <div class="right">
+                  <div class="edit-btn">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    Edit
+                  </div>
+                  <div class="delete-btn" onclick="deleteModal()">
+                    <i class="fa-solid fa-trash-can"></i>
+                    Delete
+                  </div>
+                </div>
+              </div>
           </div>
 
           <!-- addind Quiz & question  cards-->
@@ -171,8 +205,12 @@
                     <input type="text" name="question" id="question" placeholder="Enter the question">
                 </div>
                 <div class="form-group">
-                    <label for="question">Image (optional)</label>
-                    <input type="file" name="question" id="question" placeholder="Enter the question">
+                    <label for="file">Image (optional)</label>
+                    <input type="file" name="file" >
+                    
+                    
+
+
                 </div>
                 <div class="form-group">
                     <label for="correct-qst">Answers options (select  the correct answer)</label>
@@ -191,6 +229,20 @@
              
             </form>
           <!-- addind Quiz & question  cards-->
+           <!-- delete  a  quiz -->
+           <div class="modal delete-quiz" id="deleteModal">
+            <div class="form-delete">
+                    <div class="form-message">
+                        <h3>Delete Quiz</h3>
+                        <p>Are you sur you want to delete this Quiz?</p>
+                    </div>
+                    <div class="form-buttons-delete">
+                        <button type="button" class="cancel-btn-delete" onclick="closeModaldelete()">Cancel</button>
+                        <button type="submit" class="btn-delete" >Delete</button>
+                    </div>
+            </div>
+        </div>
+           <!-- delete  a  quiz -->
         </div>
       </div>
     </div>
