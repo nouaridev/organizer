@@ -104,6 +104,7 @@ body .page-body{
         border-radius: 20px;
         background-color: #FFFFFF;
         color: #2C5375;
+        font-size: 15PX;
     }
     .page-body aside .log-out span{
        background-color: #2C5375;
@@ -111,6 +112,7 @@ body .page-body{
        border-radius: 25PX;
        color: white;
        margin-right: 10PX;
+       font-size: 19PX;
     }
 /*end of the aside */
 
