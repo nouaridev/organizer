@@ -105,56 +105,70 @@
                       <h2>Status</h2>
                       <h2><i class="fa-solid fa-sort"></i> Sort by</h2>
                     </div>
-                
-                    <div class="proposition-cards ">
-                      <div class="card">
-                        <div class="card-info-section" id="info">
-                            <div class="exit"><i class="fa-solid fa-xmark"></i></div>
-                            <h2 >Mastering HTML & CSS Basics</h2>
-                            <p class="desc">
-                                This activity is designed to help participants learn the essential skills for creating and styling web pages. Through hands-on exercises, you'll gain a solid understanding of HTML structure and CSS design principles, setting the foundation for web development.
-                            </p>
-                        </div>
-                        <div class="left">
-                            <h2 class="title">Mastering HTML & CSS Basics</h2>
-                            <p class="status">Pending</p>
-                        </div>
-                        <div class="right">
-                            <div class="acc-btn">
-                                <i class="fa-solid fa-check-to-slot"></i>
-                                Accept
-                            </div>
-                            <div class="delete-btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                                Delete
-                            </div>
-                        </div>
-                      </div>  
-                      <div class="card accepted">
-                        <div class="card-info-section hidden" id="info">
-                            <div class="exit"><i class="fa-solid fa-xmark"></i></div>
-                            <h2 >Mastering HTML & CSS Basics</h2>
-                            <p class="desc">
-                                This activity is designed to help participants learn the essential skills for creating and styling web pages. Through hands-on exercises, you'll gain a solid understanding of HTML structure and CSS design principles, setting the foundation for web development.
-                            </p>
-                        </div>
-                        <div class="left">
-                            <h2 class="title">Mastering HTML & CSS Basics</h2>
-                            <p class="status">Pending</p>
-                        </div>
-                        <div class="right">
-                            <div class="acc-btn">
-                                <i class="fa-solid fa-check-to-slot"></i>
-                                Accept
-                            </div>
-                            <div class="delete-btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                                Delete
-                            </div>
-                        </div>
-                      </div>
-        
+                        
+            <div class="proposition-cards">
+              <div class="card">
+                <div class="card-info-section hidden" id="info">
+                    <div class="exit"><i class="fa-solid fa-xmark"></i></div>
+                    <h2 >Mastering HTML & CSS Basics</h2>
+                    <p class="desc">
+                        This activity is designed to help participants learn the essential skills for creating and styling web pages. Through hands-on exercises, you'll gain a solid understanding of HTML structure and CSS design principles, setting the foundation for web development.
+                    </p>
+                </div>
+                <div class="left">
+                    <h2 class="title">Mastering HTML & CSS Basics</h2>
+                    <p class="status">Pending</p>
+                </div>
+                <div class="right">
+                    <div class="acc-btn">
+                        <i class="fa-solid fa-check-to-slot"></i>
+                        Accept
                     </div>
+                    <div class="delete-btn" onclick="deleteModal()">
+                        <i class="fa-solid fa-trash-can"></i>
+                        Delete
+                    </div>
+                </div>
+              </div>  
+              <div class="card accepted">
+                <div class="card-info-section hidden" id="info">
+                    <div class="exit"><i class="fa-solid fa-xmark"></i></div>
+                    <h2 >Mastering HTML & CSS Basics</h2>
+                    <p class="desc">
+                        This activity is designed to help participants learn the essential skills for creating and styling web pages. Through hands-on exercises, you'll gain a solid understanding of HTML structure and CSS design principles, setting the foundation for web development.
+                    </p>
+                </div>
+                <div class="left">
+                    <h2 class="title">Mastering HTML & CSS Basics</h2>
+                    <p class="status">Pending</p>
+                </div>
+                <div class="right">
+                    <div class="acc-btn">
+                        <i class="fa-solid fa-check-to-slot"></i>
+                        Accept
+                    </div>
+                    <div class="delete-btn" onclick="deleteModal()">
+                        <i class="fa-solid fa-trash-can"></i>
+                        Delete
+                    </div>
+                </div>
+              </div>
+
+            </div>
+                                 <!-- delete activity form -->
+                                 <div class="modal" id="deleteModal">
+                                  <div class="form-delete">
+                                          <div class="form-message">
+                                              <h3>Delete Activity</h3>
+                                              <p>Are you sur you want to delete this Activity?</p>
+                                          </div>
+                                          <div class="form-buttons-delete">
+                                              <button type="button" class="cancel-btn-delete" onclick="closeModaldelete()">Cancel</button>
+                                              <button type="submit" class="btn-delete">Delete</button>
+                                          </div>
+                                  </div>
+                              </div>
+                              <!-- delete activity form -->
                   </div>
             </div>
         </div>
