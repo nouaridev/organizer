@@ -15,7 +15,22 @@ actCardsExit.forEach((e)=>e.addEventListener("click" , function(e){
 }))
 // activities
 
+// other activities
+    
+let oactCards = document.querySelectorAll(".main-section .main .other-acts-cards .card .left")
+let oactCardsExit = document.querySelectorAll(".main-section .main .other-acts-cards .card-info-section .exit")
 
+/// make  the  info card visible
+oactCards.forEach((e)=>e.addEventListener("click" , function(e){
+        this.parentNode.children[0].classList.remove("hidden");
+        console.log(this.parentNode)
+}))
+// hid  the  info card
+oactCardsExit.forEach((e)=>e.addEventListener("click" , function(e){
+    this.parentNode.classList.add("hidden");
+    console.log(this.parentNode)
+}))
+// other activities
 
 
 // administration
