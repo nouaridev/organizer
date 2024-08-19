@@ -928,13 +928,11 @@ body .page-body{
             height: 100%; 
             overflow: auto; 
             background-color: rgba(0, 0, 0, 0.165); 
+            justify-content: center;
+            align-items: center;
         }
 
         .form-container {
-            position: fixed; 
-            z-index: 1; 
-            left: 32%;
-            top: 16%;
             background-color: #ffffff;
             padding: 50px;
             border-radius: 20px;
@@ -1058,10 +1056,6 @@ body .page-body{
         /* Code delete */
 
         .form-delete{
-            position: fixed; 
-            z-index: 1; 
-            left: 35%;
-            top: 30%;
             background-color: #ffffff;
             padding: 40px;
             border-radius: 20px;
@@ -1193,7 +1187,7 @@ body .page-body{
                 color: #2C5375;
                 cursor: pointer;
                 position: absolute;
-                left: 82%;
+                left: 62%;
             }
             .upload-button:hover {
                 outline: none;
@@ -1209,10 +1203,6 @@ body .page-body{
                 padding: 30px;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                position: fixed; 
-                z-index: 1; 
-                left: 32%;
-                top: 25%;
                 width: 490px;
             }
 
@@ -1270,10 +1260,6 @@ body .page-body{
                 border-radius: 20px;
                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
                 padding: 40px;
-                position: fixed; 
-                z-index: 1; 
-                left: 25%;
-                top: 8%;
             }
 
             .header {
@@ -1366,10 +1352,6 @@ body .page-body{
 
             /* code note */
             .form-note{
-                position: fixed; 
-                z-index: 1; 
-                left: 35%;
-                top: 30%;
                 background-color: #ffffff;
                 padding: 40px;
                 border-radius: 20px;
@@ -1408,8 +1390,6 @@ body .page-body{
         }
         .AI{
             height: 390PX;
-            position: relative;
-            top: 23%;
         }
         .AI form h1{
            color: #2C5375;
@@ -1418,8 +1398,6 @@ body .page-body{
         }
         .AI-edit{
             height: 480PX;
-            position: relative;
-            top: 15%;
         }
 
 /* end AI models  */
@@ -1449,7 +1427,7 @@ body .page-body{
             }
 
             .illustration img {
-                margin-top: 100PX;
+                margin-top: 10PX;
                 margin-left: 150PX;
             }
 
@@ -1603,6 +1581,16 @@ body .page-body{
                 margin-top: 90PX;
                 gap: 50px;
             }
+   
+            .dash1 , .dash2{
+                max-height: 250PX;
+            }
+            .dash3 ,.dash4{
+                max-height:360PX ;
+            }
+            .dash5 ,.dash6{
+                max-height: 390PX;
+            }
 
 
             .main-dashboaed .dash1  {
@@ -1625,12 +1613,40 @@ body .page-body{
             color: #39434D;
             }
 
-            .main-dashboaed .dash1  .inf1 img,
-            .main-dashboaed .dash1  .inf2 img,
-            .main-dashboaed .dash1  .inf3 img,
-            .main-dashboaed .dash1  .inf4 img{
-                width: 59PX;
-                padding-right: 10PX;
+            .main-dashboaed .dash1  .inf1 .img-icon,
+            .main-dashboaed .dash1  .inf2 .img-icon,
+            .main-dashboaed .dash1  .inf3 .img-icon,
+            .main-dashboaed .dash1  .inf4 .img-icon{
+                width: 50PX;
+                height: 50PX;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 50PX;
+                margin-right: 15PX;
+            }
+            .main-dashboaed .dash1  .inf1 .img-icon{
+                background: linear-gradient(186.81deg, #F28A0B 5.33%, #FFFFFF 248.16%);
+
+            }
+            .main-dashboaed .dash1  .inf2 .img-icon{
+                background: linear-gradient(186.81deg, #573763 5.33%, #FFFFFF 248.16%);
+
+            }
+            .main-dashboaed .dash1  .inf3 .img-icon{
+                background: linear-gradient(186.81deg, #1B898C 5.33%, #FFFFFF 248.16%);
+
+            }
+            .main-dashboaed .dash1  .inf4 .img-icon{
+                background: linear-gradient(186.81deg, #D4343A 5.33%, #FFFFFF 248.16%);
+            }
+            .main-dashboaed .dash1  .inf1 .img-icon span ,
+            .main-dashboaed .dash1  .inf2 .img-icon span,
+            .main-dashboaed .dash1  .inf3 .img-icon span,
+            .main-dashboaed .dash1  .inf4 .img-icon span{
+                font-size: 27PX;
             }
 
             .main-dashboaed .dash1  .inf1 H1,
@@ -1713,6 +1729,7 @@ body .page-body{
             }
             .analyse-static img{
                 width: 450PX;
+                margin-bottom: 20PX;
             }
 
             .logs-dash3{
@@ -1729,6 +1746,25 @@ body .page-body{
                 color: #6898B2;
                 font-size: 14px;
             }
+            .event-list {
+                max-height: 250px; 
+                overflow-y: auto; 
+            }
+            
+            .event-list::-webkit-scrollbar {
+                width: 4px; 
+                background-color: #f2f4f3;
+            }
+            .event-list::-webkit-scrollbar-thumb {
+                background-color: #6898B2; 
+                border: 1px solid #94bbdd; 
+                border-radius: 20px; 
+            }
+            
+            .event-list::-webkit-scrollbar-thumb:hover {
+                background-color: #55798A; 
+            }
+
             .inf-date{
                 display: flex;
                 justify-content: space-between;
@@ -1779,21 +1815,21 @@ body .page-body{
                 padding-bottom: 10PX;
                 display: flex;
                 justify-content: space-between;
-                padding-left: 30PX;
-                padding-right: 30PX;
+                padding-left: 70PX;
+                padding-right: 70PX;
 
             }
             .item-dash5 img{
-                vertical-align: bottom;
                 padding-right: 10PX;
-
             }
             .item-dash5 span{
                 color: #39434D;
+                padding-top: 9PX;
             }
             .item-dash5 .south {
-                font-size: 15PX;
+                font-size: 17PX;
                 color: red;
+                vertical-align: bottom;
             }
             .item-dash5 .north {
                 font-size: 15PX;
@@ -1855,4 +1891,68 @@ body .page-body{
                 padding-left: 10px;
             }
 
+
+
+
+            .dash2-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                display: none;
+            }
+            
+            .see-all-Events {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                width: 80%;
+                max-width: 600px;
+            }
+            
+            .close-btn {
+                cursor: pointer;
+                font-size: 24px;
+                float: right;
+            }
+            
+    
+            .see-all-top{
+                background-color: #fff;
+                border-radius: 20px;
+                padding: 20PX;
+            }
+
+            .dash5-modal {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dash5-modal .head-dash5 h2{
+                color: #6898B2;
+                font-size: 20px;
+                margin: 0;
+                margin-bottom: 30PX;
+            }
+            .dash5-modal .head-dash5 {
+                display: flex;
+                justify-content: center;
+
+            }
+           
             /* end */
