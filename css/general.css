@@ -79,9 +79,8 @@ body .page-body{
     .page-body aside ul li a:hover ,   .page-body aside ul li a:active{
         color: #2C5375;
     }
-    .page-body aside ul li i{
+    .page-body aside ul li span{
         margin-right: 10px;
-    
     }
 
     .page-body aside ul li a{
