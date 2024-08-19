@@ -97,8 +97,20 @@ body .page-body{
     }
 
     .page-body aside .log-out{
-        position: absolute;
-        bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        color: #2C5375;
+    }
+    .page-body aside .log-out span{
+       background-color: #2C5375;
+       padding: 10PX;
+       border-radius: 25PX;
+       color: white;
+       margin-right: 10PX;
     }
 /*end of the aside */
 
