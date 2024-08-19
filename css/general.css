@@ -346,7 +346,7 @@ body .page-body{
                 position: relative;
             }
             .main-section .main .proposition-cards .card:hover{
-                border-left: 10px solid #22c55e;
+                border-left: 3px solid #22c55e;
             }
           
             .main-section .main .proposition-cards .card .left{
@@ -535,9 +535,9 @@ body .page-body{
             font-size: 16px ;
             line-height: 18.75px; 
         }
-        .main-section .main .quiz-catigories-cards   .card  .center h2:last-child{text-align: end;}
-        .main-section .main .quiz-catigories-cards   .card  .center h2:first-child{text-align: start;}
-        .main-section .main .quiz-catigories-cards   .card  .center h2:nth-child(2){text-align: center}
+        .main-section .main .quiz-catigories-cards   .card  .center h2:last-child{text-align: end; font-weight: 400;}
+        .main-section .main .quiz-catigories-cards   .card  .center h2:first-child{text-align: start; font-weight: 400;}
+        .main-section .main .quiz-catigories-cards   .card  .center h2:nth-child(2){text-align: center; font-weight: 400;}
         .main-section .main .quiz-catigories-cards   .card  .left{
             width : 250px;
           
@@ -556,7 +556,7 @@ body .page-body{
         .main-section .main .quiz-catigories-cards .delete-btn:hover{color: #fc091d;}
 
         .main-section .main .quiz-catigories-cards .card:hover{
-            border-bottom: 3px solid #22c55e;
+            border-bottom: 2px solid #22c55e;
         }
 
 
@@ -1571,6 +1571,7 @@ body .page-body{
     .main-section .main .other-acts-cards  .card .left h2{
         color: #898C90;
         font-size: 16px;
+        font-weight: 400;
     }
     .main-section .main .other-acts-cards  .card .left h2:nth-child(1){
         font-size: 17px;
