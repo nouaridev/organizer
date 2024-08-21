@@ -82,7 +82,7 @@ body .page-body{
     .page-body aside ul li span{
         margin-right: 10px;
     }
-
+d
     .page-body aside ul li a{
         color:  #A6A2A2;;
         font-size: 1.2vw;
@@ -359,7 +359,7 @@ body .page-body{
                 position: relative;
             }
             .main-section .main .proposition-cards .card:hover{
-                border-left: 3px solid #22c55e;
+                border-left: 3px solid  #2C5375;
             }
           
             .main-section .main .proposition-cards .card .left{
