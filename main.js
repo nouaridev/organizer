@@ -68,6 +68,12 @@ function openAddQuiz(){
     document.querySelector('.add-quiz').style.display= 'flex';
 }
 
+function editmodal(){
+    document.querySelector('.edit-quiz').style.display = 'flex';
+}
+function closeEditQuiz(){
+    document.querySelector('.edit-quiz').style.display = 'none';
+}
 function closeAddCat(){
     document.querySelector('.add-cat').style.display = 'none';
 }

@@ -369,7 +369,7 @@ body .page-body{
                 width: 51%;
             }
             .main-section .main .proposition-cards .card .left .title{
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 400;
                 color: #171E25;
             }
@@ -569,7 +569,7 @@ body .page-body{
         .main-section .main .quiz-catigories-cards .delete-btn:hover{color: #fc091d;}
 
         .main-section .main .quiz-catigories-cards .card:hover{
-            border-bottom: 2px solid #22c55e;
+            border-bottom: 3px solid  #2C5375;
         }
 
 
@@ -682,7 +682,7 @@ body .page-body{
             color: #39434D;
         }
         .main-section .main .quiz-cards   .card  .left h2{
-            font-size: 20px;
+            font-size: 18px;
             line-height: 23px;
             font-weight: 400;
         }
@@ -694,7 +694,7 @@ body .page-body{
         .main-section .main .quiz-cards .delete-btn:hover{color: #fc091d;}
 
         .main-section .main .quiz-cards .card:hover{
-            border-bottom: 3px solid #22c55e;
+            border-bottom: 3px solid #2C5375;
         }
 
 
@@ -1569,7 +1569,7 @@ body .page-body{
         position: relative;
     }
     .main-section .main .other-acts-cards  .card:hover{
-        border-bottom: 1px solid #22c55e;
+        border-bottom: 3px solid #2C5375;
     }
   
     .main-section .main  .other-acts-cards  .card .left{

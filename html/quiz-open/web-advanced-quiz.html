@@ -226,6 +226,36 @@
              
             </form>
           <!-- addind Quiz & question  cards-->
+
+           <!-- Edit modal -->
+           <form action="" class="edit-quiz add-quiz " onsubmit="closeEditQuiz()" style="display: none;">
+            <h2>Edit Quiz</h2>
+            <p>Question 1</p>
+            <div class="form-group">
+                <label for="question">Question</label>
+                <input type="text" name="question" id="question" placeholder="Enter the question">
+            </div>
+            <div class="form-group">
+                <label for="question">Image (optional)</label>
+                <input type="file" name="question" id="question" placeholder="Enter the question">
+            </div>
+            <div class="form-group">
+                <label for="correct-qst">Answers options (select  the correct answer)</label>
+                <div class="answers">
+                    <i class="fa-solid fa-plus"></i>
+                    <input type="text" placeholder="Add options">
+                </div>
+            </div>
+            <div class="next-btn">
+                <p>Next question </p><i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="cancel-btn" onclick="closeEditQuiz()">Cancel</button>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+         
+        </form>
+        <!-- END edit -->
            <!-- delete  a  quiz -->
            <div class="modal delete-quiz" id="deleteModal">
             <div class="form-delete">
